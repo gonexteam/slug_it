@@ -5,7 +5,7 @@ Make slug from text in flutter, support vietnamese.
 ## Usage
 
 ```dart
-String slug = SlugIT.makeSlug('Hello world');
+String slug = SlugIT().makeSlug('Hello world');
 print(slug);
 ```
 
