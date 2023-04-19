@@ -1,5 +1,7 @@
 library slug_it;
 
+import 'package:slug_it/char_utils.dart';
+
 /// SlugIT ==> make slug from string.
 class SlugIT {
   String makeSlug(String text, {String separator = '-'}) {
@@ -34,6 +36,9 @@ class SlugIT {
   }
 
   static Map<String, String> _vietnameseMap() => {
+        for (int i = 0; i < CharUtils.DESTINATION_CHARACTERS.length; i++)
+          CharUtils.SOURCE_CHARACTERS[i]: CharUtils.DESTINATION_CHARACTERS[i],
+
         //a
         'ả': 'a',
         'ạ': 'a',
